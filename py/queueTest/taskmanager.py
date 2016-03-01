@@ -1,7 +1,9 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 # taskmanager.py
 
 import random, time, Queue
-from multiprocessing.managers improt BaseManager
+from multiprocessing.managers import BaseManager
 
 task_queue = Queue.Queue()
 
@@ -26,7 +28,7 @@ for i in range(10):
     task.put(n)
 
 print('Try get results...')
-for i int range(10):
+for i in range(10):
     r = result.get(timeout=10)
     print('Result: %s' % r)
 
